@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import  { FC } from 'react';
 import PersonIcon from '@mui/icons-material/Person'; // Icon to represent the assignee
 import { Task } from '@/types/types'; // Importing the Task type definition
 
