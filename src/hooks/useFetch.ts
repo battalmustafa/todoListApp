@@ -1,4 +1,7 @@
 import { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { Task } from '@/types/types';
+import { updateTask } from '@/features/tasks/tasksSlice';
 
 type FetchResult<T> = {
   data: T | null;           // Holds the fetched data
@@ -11,6 +14,7 @@ const useFetch = <T,>(url: string): FetchResult<T> => {
   const [data, setData] = useState<T | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
+  const dispatch = useDispatch(); // Get dispatch function from Redux
 
   useEffect(() => {
     fetch(url)
@@ -38,6 +42,10 @@ const useFetch = <T,>(url: string): FetchResult<T> => {
       if (!response.ok) {
         throw new Error('Failed to update data'); // Handles non-successful responses
       }
+      
+      // Dispatch action to update task in Redux store
+      dispatch(updateTask(newData as Task)); 
+
       setData(newData); // Updates state with new data
     } catch (err) {
       setError(err as Error); // Sets error state
