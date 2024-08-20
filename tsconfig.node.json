@@ -18,8 +18,7 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "@@/*": ["./src/.vit/*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": ["./src", "./*.ts"]
