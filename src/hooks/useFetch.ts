@@ -32,24 +32,10 @@ const useFetch = <T,>(url: string): FetchResult<T> => {
   const updateData = async (newData: T) => {
     setLoading(true);
     try {
-      const response = await fetch(url, {
-        method: 'POST', 
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(newData),
-      });
-      if (!response.ok) {
-        throw new Error('Failed to update data'); // Handles non-successful responses
-      }
-      
       // Dispatch action to update task in Redux store
       dispatch(updateTask(newData as Task)); 
-
       setData(newData); // Updates state with new data
-    } catch (err) {
-      setError(err as Error); // Sets error state
-    } finally {
+    }  finally {
       setLoading(false); // Ends loading state
     }
   };
