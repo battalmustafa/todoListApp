@@ -1,6 +1,7 @@
 # Task Management App
 
 This project is a task management application built with React, TypeScript, and Vite. It allows users to add new tasks, import tasks from a JSON file, and manage tasks using drag-and-drop functionality between different statuses.
+Mobile View: On mobile devices, you can change task statuses using a dropdown menu on each task card.
 ## Screenshot
 
 ![Task Management App Screenshot](src/assets/App-ss.png)
@@ -14,6 +15,7 @@ Check out the live demo [here](https://battalmustafa-taskapp.netlify.app/).
 - **Add New Tasks:** Easily create new tasks with all necessary details.
 - **Import Tasks via JSON:** Upload tasks in bulk by importing a JSON file.
 - **Drag-and-Drop Interface:** Intuitively move tasks between different statuses using drag-and-drop.
+- **Mobile View:** Change tasks between different statuses using dropdown menu.
 - **Status Management:** Seamlessly manage task statuses to track progress.
 
 ## Tech Stack
