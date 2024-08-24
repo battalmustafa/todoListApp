@@ -49,8 +49,12 @@ const TaskTable: React.FC<TaskTableProps> = ({ tasks, onStatusChange }) => {
   };
 
   return (
-    <Box display="flex" gap={3} flexWrap="wrap">
-      {/* Loop through each status and display tasks under it */}
+<Box 
+      display="flex" 
+      flexDirection={{ xs: 'column', md: 'row' }} // Stack vertically on small screens
+      gap={3} 
+      flexWrap="wrap"
+    >      {/* Loop through each status and display tasks under it */}
       {statuses.map(status => {
         const statusColor = status.replace(' ', '').toLowerCase(); // Prepare a class name based on status
 
