@@ -106,7 +106,10 @@ const TaskTable: React.FC<TaskTableProps> = ({ tasks, onStatusChange }) => {
                   }}
                   className="hover:cursor-move bg-slate-100"
                 >
-                  <TaskCard task={task} /> {/* Render the task details */}
+                  <TaskCard 
+                  onStatusChange={onStatusChange}
+                  statuses={statuses}
+                  task={task} /> {/* Render the task details */}
                 </Card>
               ))
             )}
