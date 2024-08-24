@@ -1,6 +1,13 @@
 # Task Management App
 
 This project is a task management application built with React, TypeScript, and Vite. It allows users to add new tasks, import tasks from a JSON file, and manage tasks using drag-and-drop functionality between different statuses.
+## Screenshot
+
+![Task Management App Screenshot](./assets/App-ss.png)
+
+## Live Demo
+
+Check out the live demo [here](https://battalmustafa-taskapp.netlify.app/).
 
 ## Features
 
@@ -28,3 +35,11 @@ This project is a task management application built with React, TypeScript, and 
    ```bash
    git clone https://github.com/battalmustafa/todoListApp.git
    cd todoListApp
+2. Install dependencies:
+   ```bash
+npm install
+
+3. Start the development server:
+   ```bash
+npm run dev
+Open the app in your browser at http://localhost:5173/
