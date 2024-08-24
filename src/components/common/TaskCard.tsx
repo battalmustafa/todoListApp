@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import { FC, useState } from 'react';
 import PersonIcon from '@mui/icons-material/Person'; // Icon to represent the assignee
 import { Task } from '@/types/types'; // Importing the Task type definition
 import { MenuItem, Select, FormControl, InputLabel, SelectChangeEvent } from '@mui/material'; // Import MUI components
