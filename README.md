@@ -35,11 +35,13 @@ Check out the live demo [here](https://battalmustafa-taskapp.netlify.app/).
    ```bash
    git clone https://github.com/battalmustafa/todoListApp.git
    cd todoListApp
+
 2. Install dependencies:
    ```bash
-npm install
+    npm install
 
 3. Start the development server:
    ```bash
-npm run dev
-Open the app in your browser at http://localhost:5173/
+      npm run dev
+
+4. Open the app in your browser at http://localhost:5173/
